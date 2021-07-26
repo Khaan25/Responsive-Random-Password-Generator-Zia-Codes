@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random Password Generator - ZiaCodes</title>
+
+	<!-- ==================== FONT AWESOME ==================== -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+
+	<!-- ==================== CSS FILE ==================== -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- ==================== METAs ==================== -->
+	<meta name="description" content="A Custom Random Password Generator">
+	<meta name="author" content="Zia Codes">
+	<meta name="keywords" content="Random, Password, Generator, ZiaCodes">
+
+</head>
+
+<body>
+	<!-- ==================== RANDOM PASSWORD GENERATOR ==================== -->
+	<div class="pass__container">
+		<h2 class="pass__title">Password Generator</h2>
+
+		<!-- ==================== RESULT ==================== -->
+		<div class="result">
+			<div class="result__title field-title">Generated Password</div>
+			<div class="result__info right">Click to Copy</div>
+			<div class="result__info left">Copied</div>
+			<div class="result__viewbox" id="result">CLICK GENERATE</div>
+			<button id="copyBtn"><i class="far fa-copy"></i></button>
+		</div>
+
+		<!-- ==================== SLIDER ==================== -->
+		<div class="length range__slider" data-min="4" data-max="32">
+			<div class="length__title field-title" data-length="0">Length :</div>
+			<input id="slider" type="range" min="4" max="32" value="16">
+		</div>
+
+		<!-- ==================== SETTINGS(OPTION TO CHOOSE) ==================== -->
+		<div class="settings">
+			<span class="settings__title field-title">Settings</span>
+			<div class="settings__option">
+				<input id="uppercase" type="checkbox" checked>
+				<label for="uppercase">Include Uppercase</label>
+			</div>
+			<div class="settings__option">
+				<input id="lowercase" type="checkbox" checked>
+				<label for="lowercase">Include lowercase</label>
+			</div>
+			<div class="settings__option">
+				<input id="number" type="checkbox" checked>
+				<label for="number">Include Number</label>
+			</div>
+			<div class="settings__option">
+				<input id="symbol" type="checkbox" checked>
+				<label for="symbol">Include Symbol</label>
+			</div>
+		</div>
+
+		<!-- ==================== PASSSSWORD GENERATE BUTTON ==================== -->
+		<button class="btn__generate" id="generate">Generate Password</button>
+
+	</div>
+
+	<!-- ==================== MAIN JS ==================== -->
+	<script src="main.js"></script>
+
+</body>
+
+</html>
